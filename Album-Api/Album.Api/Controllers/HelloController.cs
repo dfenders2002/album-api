@@ -1,0 +1,28 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+
+namespace Album.Api.Controllers
+{
+    public class response
+    {
+        public string Response { get; set; }
+    }
+    public class HelloController : Controller
+    {
+        //private readonly ILogger<HelloController> _logger;
+
+        //public HelloController(ILogger<HelloController> logger)
+        //{
+        // _logger = logger;
+        //}
+        [Route("/api/hello")]
+        [HttpGet]
+        public void hello(string Name = "")
+        {
+            //_logger.LogInformation(Name);
+            response myreponse = new response();
+            GreetingService greetingService = new GreetingService();
+            myreponse.Response = greetingService.Hello(Name);
+        }
+    }
+}
