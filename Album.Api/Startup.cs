@@ -11,7 +11,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using IHostingEnvironment = Microsoft.AspNetCore.Hosting.IHostingEnvironment;
+
 namespace Album.Api
 {
     public class Startup
@@ -20,22 +20,30 @@ namespace Album.Api
         {
             Configuration = configuration;
         }
-        public void ConfigureServices(IServiceCollection services)
-        {
-            services.AddHealthChecks();
-        }
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceCollection services)
-        {
-            app.UseHealthChecks("/health");//your request URL will be health
-            services.AddControllers();
-        }
 
         public IConfiguration Configuration { get; }
 
+        // This method gets called by the runtime. Use this method to add services to the container.
+        public void ConfigureServices(IServiceCollection services)
+        {
+
+            services.AddControllers();
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Album.Api", Version = "v1" });
+            });
+        }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+                app.UseSwagger();
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Album.Api v1"));
+            }
+
             app.UseHttpsRedirection();
 
             app.UseRouting();

@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Album.Api"
+    "\\Album.Api",
+    "\\Album.Api\\Controllers"
   ],
-  "SelectedNode": "\\Album-Api.sln",
+  "SelectedNode": "\\Album.Api\\Controllers\\HelloController.cs",
   "PreviewInSolutionExplorer": false
 }
