@@ -1,4 +1,5 @@
 using System;
+using System.Net.Http;
 using Xunit;
 
 namespace Album.Api.Tests
@@ -9,8 +10,8 @@ namespace Album.Api.Tests
         public void Test1()
         {
             GreetingService greetingService = new GreetingService();
-            string awnser = greetingService.Hello("Daan");
-            Assert.Equal(awnser, "Hello Daan");
+            string anwser = greetingService.Hello("Daan");
+            Assert.Equal(anwser, "Hello Daan");
         }
         [Theory]
         [InlineData("", "Hello world")]
@@ -21,6 +22,21 @@ namespace Album.Api.Tests
             GreetingService greetingService = new GreetingService();
             string awnser = greetingService.Hello(value1);
             Assert.Equal(awnser, expected);
+        }
+
+        [Theory]
+        [InlineData("https://localhost:44309/api/hello", "Hello world")]
+        [InlineData("https://localhost:44309/api/hello?name=Daan", "Hello Daan")]
+        public async void GetTest(string url, string awnser)
+        {
+            HttpClient client = new HttpClient();
+            HttpResponseMessage response = await client.GetAsync(url);
+            var result = "";
+            if (response.IsSuccessStatusCode)
+            {
+                result = await response.Content.ReadAsStringAsync();
+            }
+            Assert.Equal(result, awnser);
         }
     }
 }
