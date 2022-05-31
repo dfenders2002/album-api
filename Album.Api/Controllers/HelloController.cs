@@ -16,13 +16,13 @@ namespace Album.Api.Controllers
         // _logger = logger;
         //}
         [Route("/api/hello")]
-        [HttpGet]
-        public void hello(string Name = "")
+        [HttpGet{"name?"}]
+        public void hello(string name = "")
         {
             //_logger.LogInformation(Name);
             response myreponse = new response();
             GreetingService greetingService = new GreetingService();
-            myreponse.Response = greetingService.Hello(Name);
+            myreponse.Response = greetingService.Hello(name);
         }
     }
 }
