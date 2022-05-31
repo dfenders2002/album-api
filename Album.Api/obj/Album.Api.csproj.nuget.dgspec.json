@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dfend\\source\\repos\\album-api\\Album.Api\\Album.Api.csproj": {}
+    "C:\\Users\\dfend\\Source\\Repos\\album-api\\Album.Api\\Album.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dfend\\source\\repos\\album-api\\Album.Api\\Album.Api.csproj": {
+    "C:\\Users\\dfend\\Source\\Repos\\album-api\\Album.Api\\Album.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dfend\\source\\repos\\album-api\\Album.Api\\Album.Api.csproj",
+        "projectUniqueName": "C:\\Users\\dfend\\Source\\Repos\\album-api\\Album.Api\\Album.Api.csproj",
         "projectName": "Album.Api",
-        "projectPath": "C:\\Users\\dfend\\source\\repos\\album-api\\Album.Api\\Album.Api.csproj",
+        "projectPath": "C:\\Users\\dfend\\Source\\Repos\\album-api\\Album.Api\\Album.Api.csproj",
         "packagesPath": "C:\\Users\\dfend\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dfend\\source\\repos\\album-api\\Album.Api\\obj\\",
+        "outputPath": "C:\\Users\\dfend\\Source\\Repos\\album-api\\Album.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -64,12 +64,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[5.0.17, 5.0.17]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -79,11 +73,6 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.105\\RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "linux-x64": {
-          "#import": []
         }
       }
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vQ7Zl/6wiwibB8af/FA4JG0Q2W2mRByua78Y/ThkVR50pnzcQUx2XdQIVEOzsDpekkxKeqaIE21zZ0/OMDFQqA==",
+  "dgSpecHash": "5plDtWONRo51YBEvsOxmlV4kE1BwkJXDeuy1xL2y58GFyhlpWrzGuK+CQYdfWpsh9EYTx8mNA3VD20GffVRgbA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dfend\\source\\repos\\album-api\\Album.Api\\Album.Api.csproj",
+  "projectFilePath": "C:\\Users\\dfend\\Source\\Repos\\album-api\\Album.Api\\Album.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dfend\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\dfend\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
@@ -10,8 +10,7 @@
     "C:\\Users\\dfend\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\dfend\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
     "C:\\Users\\dfend\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
-    "C:\\Users\\dfend\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
-    "C:\\Users\\dfend\\.nuget\\packages\\microsoft.netcore.app.host.linux-x64\\5.0.17\\microsoft.netcore.app.host.linux-x64.5.0.17.nupkg.sha512"
+    "C:\\Users\\dfend\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
   ],
   "logs": []
 }
