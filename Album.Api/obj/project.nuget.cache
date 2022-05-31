@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bm58KMD1u3n/FLU80/GODU2ANxRpMjCdYaZomPE9UKTD4Ds9rQTmfBIJpe3ZPe7rgYpvDr/2LJ4iUQb2ipNLMg==",
+  "dgSpecHash": "vQ7Zl/6wiwibB8af/FA4JG0Q2W2mRByua78Y/ThkVR50pnzcQUx2XdQIVEOzsDpekkxKeqaIE21zZ0/OMDFQqA==",
   "success": true,
   "projectFilePath": "C:\\Users\\dfend\\source\\repos\\album-api\\Album.Api\\Album.Api.csproj",
   "expectedPackageFiles": [
@@ -10,7 +10,8 @@
     "C:\\Users\\dfend\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\dfend\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
     "C:\\Users\\dfend\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
-    "C:\\Users\\dfend\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+    "C:\\Users\\dfend\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
+    "C:\\Users\\dfend\\.nuget\\packages\\microsoft.netcore.app.host.linux-x64\\5.0.17\\microsoft.netcore.app.host.linux-x64.5.0.17.nupkg.sha512"
   ],
   "logs": []
 }

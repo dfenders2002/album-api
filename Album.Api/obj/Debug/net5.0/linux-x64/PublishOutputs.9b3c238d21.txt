@@ -1,0 +1,11 @@
+C:\Users\dfend\source\repos\album-api\Album.Api\bin\Debug\net5.0\linux-x64\publish\Album.Api
+C:\Users\dfend\source\repos\album-api\Album.Api\bin\Debug\net5.0\linux-x64\publish\appsettings.Development.json
+C:\Users\dfend\source\repos\album-api\Album.Api\bin\Debug\net5.0\linux-x64\publish\appsettings.json
+C:\Users\dfend\source\repos\album-api\Album.Api\bin\Debug\net5.0\linux-x64\publish\Album.Api.dll
+C:\Users\dfend\source\repos\album-api\Album.Api\bin\Debug\net5.0\linux-x64\publish\Album.Api.deps.json
+C:\Users\dfend\source\repos\album-api\Album.Api\bin\Debug\net5.0\linux-x64\publish\Album.Api.runtimeconfig.json
+C:\Users\dfend\source\repos\album-api\Album.Api\bin\Debug\net5.0\linux-x64\publish\Album.Api.pdb
+C:\Users\dfend\source\repos\album-api\Album.Api\bin\Debug\net5.0\linux-x64\publish\Microsoft.OpenApi.dll
+C:\Users\dfend\source\repos\album-api\Album.Api\bin\Debug\net5.0\linux-x64\publish\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\dfend\source\repos\album-api\Album.Api\bin\Debug\net5.0\linux-x64\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\dfend\source\repos\album-api\Album.Api\bin\Debug\net5.0\linux-x64\publish\Swashbuckle.AspNetCore.SwaggerUI.dll

@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Album.Api",
+    "\\Album.Api.Tests",
+    "\\Album.Api\\Controllers"
   ],
-  "SelectedNode": "\\C:\\Users\\dfend\\Source\\Repos\\album-api",
+  "SelectedNode": "\\Album-Api.sln",
   "PreviewInSolutionExplorer": false
 }
