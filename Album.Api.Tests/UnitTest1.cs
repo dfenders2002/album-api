@@ -1,10 +1,12 @@
+using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.Extensions.Hosting;
 using System;
 using System.Net.Http;
 using Xunit;
 
 namespace Album.Api.Tests
 {
-    public class UnitTest1
+    public class UnitTest1 : IClassFixture<WebApplicationFactory<Album.Api.Startup>>
     {
         [Fact]
         public void Test1()
@@ -24,13 +26,21 @@ namespace Album.Api.Tests
             Assert.Equal(awnser, expected);
         }
 
+        private readonly WebApplicationFactory<Album.Api.Startup> _factory;
+
+        public UnitTest1(WebApplicationFactory<Album.Api.Startup> factory)
+        {
+            _factory = factory;
+        }
+
+
         [Theory]
         [InlineData("https://localhost:44309/api/hello", "Hello world")]
         [InlineData("https://localhost:44309/api/hello?name=Daan", "Hello Daan")]
         public async void GetTest(string url, string awnser)
         {
-            HttpClient client = new HttpClient();
-            HttpResponseMessage response = await client.GetAsync(url);
+            var client = _factory.CreateClient();
+            var response = await client.GetAsync(url);
             var result = "";
             if (response.IsSuccessStatusCode)
             {
