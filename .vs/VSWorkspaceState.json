@@ -1,8 +1,7 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Album.Api\\Controllers"
+    "\\Album.Api.Tests"
   ],
-  "SelectedNode": "\\Album-Api.sln",
   "PreviewInSolutionExplorer": false
 }

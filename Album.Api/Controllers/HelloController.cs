@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-
+using System.Net;
 namespace Album.Api.Controllers
 {
     public class response
@@ -19,6 +19,7 @@ namespace Album.Api.Controllers
         [HttpGet("{name?}")]
         public string hello(string name = "") { 
             //_logger.LogInformation(Name);
+            name = Dns.GetHostName();
             response myreponse = new response();
             GreetingService greetingService = new GreetingService();
             myreponse.Response = greetingService.Hello(name);
