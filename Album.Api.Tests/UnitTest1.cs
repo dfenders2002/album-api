@@ -3,6 +3,7 @@ using Microsoft.Extensions.Hosting;
 using System;
 using System.Net.Http;
 using Xunit;
+using System.Net;
 
 namespace Album.Api.Tests
 {
@@ -21,6 +22,7 @@ namespace Album.Api.Tests
         [InlineData(null, "Hello world")]
         public void Test2(string value1, string expected)
         {
+            expected = Dns.GetHostName();
             GreetingService greetingService = new GreetingService();
             string awnser = greetingService.Hello(value1);
             Assert.Equal(awnser, expected);
@@ -39,6 +41,7 @@ namespace Album.Api.Tests
         [InlineData("https://localhost:44309/api/hello?name=Daan", "Hello Daan")]
         public async void GetTest(string url, string awnser)
         {
+            awnser  = Dns.GetHostName();
             var client = _factory.CreateClient();
             var response = await client.GetAsync(url);
             var result = "";
