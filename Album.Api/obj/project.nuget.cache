@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iwo1BkAfKbo60oHNf4EtWbnyvUnEgNBnJhSsvJ/i0d0JQr0GbxTDi6SlYoSUGG2EkjNYIrQr1nH0F2nSmEUDmg==",
+  "dgSpecHash": "bm58KMD1u3n/FLU80/GODU2ANxRpMjCdYaZomPE9UKTD4Ds9rQTmfBIJpe3ZPe7rgYpvDr/2LJ4iUQb2ipNLMg==",
   "success": true,
-  "projectFilePath": "c:\\Users\\dfend\\source\\repos\\album-api\\Album.Api\\Album.Api.csproj",
+  "projectFilePath": "C:\\Users\\dfend\\source\\repos\\album-api\\Album.Api\\Album.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dfend\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\dfend\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

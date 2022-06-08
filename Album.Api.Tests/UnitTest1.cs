@@ -14,7 +14,7 @@ namespace Album.Api.Tests
         {
             GreetingService greetingService = new GreetingService();
             string anwser = greetingService.Hello("Daan");
-            Assert.Equal(anwser, "Hello Daan");
+            Assert.Equal(anwser, "Hello Daan from " + Dns.GetHostName());
         }
         [Theory]
         [InlineData("", "Hello world")]
@@ -49,7 +49,7 @@ namespace Album.Api.Tests
             {
                 result = await response.Content.ReadAsStringAsync();
             }
-            Assert.Equal(result, awnser);
+            Assert.Equal(awnser, result);
         }
     }
 }

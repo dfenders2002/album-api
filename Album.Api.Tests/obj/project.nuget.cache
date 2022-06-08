@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "R82/ftazdNy3j3FiFrup8SmRj5AUREetu2Tq78fTE8AHi3xML2i2spQWHy2NHNK4a8bptpqDSeQ0xqH6s4SQ0Q==",
+  "dgSpecHash": "cBllSUysFvAJeOMsQrVv139O+XPskRQEkdZH5tjRLzR1DADZmkszQkbJMy5zbGDoX7Fw3XTuodts6EQZiHHtWw==",
   "success": true,
-  "projectFilePath": "c:\\Users\\dfend\\source\\repos\\album-api\\Album.Api.Tests\\Album.Api.Tests.csproj",
+  "projectFilePath": "C:\\Users\\dfend\\source\\repos\\album-api\\Album.Api.Tests\\Album.Api.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dfend\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\dfend\\.nuget\\packages\\microsoft.aspnetcore.mvc.testing\\5.0.0\\microsoft.aspnetcore.mvc.testing.5.0.0.nupkg.sha512",

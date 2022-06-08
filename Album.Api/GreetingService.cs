@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Mvc;
+using System.Net;
 
 namespace Album.Api
 {
@@ -15,12 +16,12 @@ namespace Album.Api
             if (name == "" || name == null || name == " ")
             {
                 //_logger.LogInformation("Hello world");
-                return "Hello world";
+                return "Hello world from " + Dns.GetHostName();
             }
             else
             {
                 //_logger.LogInformation($"Hello {name}");
-                return $"Hello {name}";
+                return $"Hello {name} from " + Dns.GetHostName() ;
             }
         }
     }

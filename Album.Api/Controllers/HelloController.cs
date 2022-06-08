@@ -20,7 +20,6 @@ namespace Album.Api.Controllers
         public string hello(string name = "") { 
             
             //_logger.LogInformation(Name);
-            name = name + " from " + Dns.GetHostName();
             response myreponse = new response();
             GreetingService greetingService = new GreetingService();
             myreponse.Response = greetingService.Hello(name);
