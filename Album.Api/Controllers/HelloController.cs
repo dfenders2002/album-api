@@ -18,8 +18,9 @@ namespace Album.Api.Controllers
         [Route("/api/hello")]
         [HttpGet("{name?}")]
         public string hello(string name = "") { 
+            
             //_logger.LogInformation(Name);
-            name = Dns.GetHostName();
+            name = name + " from " + Dns.GetHostName();
             response myreponse = new response();
             GreetingService greetingService = new GreetingService();
             myreponse.Response = greetingService.Hello(name);
