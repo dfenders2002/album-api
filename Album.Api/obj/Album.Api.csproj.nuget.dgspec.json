@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dfend\\Source\\Repos\\album-api\\Album.Api\\Album.Api.csproj": {}
+    "c:\\Users\\dfend\\source\\repos\\album-api\\Album.Api\\Album.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dfend\\Source\\Repos\\album-api\\Album.Api\\Album.Api.csproj": {
+    "c:\\Users\\dfend\\source\\repos\\album-api\\Album.Api\\Album.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dfend\\Source\\Repos\\album-api\\Album.Api\\Album.Api.csproj",
+        "projectUniqueName": "c:\\Users\\dfend\\source\\repos\\album-api\\Album.Api\\Album.Api.csproj",
         "projectName": "Album.Api",
-        "projectPath": "C:\\Users\\dfend\\Source\\Repos\\album-api\\Album.Api\\Album.Api.csproj",
+        "projectPath": "c:\\Users\\dfend\\source\\repos\\album-api\\Album.Api\\Album.Api.csproj",
         "packagesPath": "C:\\Users\\dfend\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dfend\\Source\\Repos\\album-api\\Album.Api\\obj\\",
+        "outputPath": "c:\\Users\\dfend\\source\\repos\\album-api\\Album.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
