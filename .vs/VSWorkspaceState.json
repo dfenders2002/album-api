@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Album.Api.Tests"
+    "\\Album.Api",
+    "\\Album.Api.Tests",
+    "\\Album.Api\\Controllers"
   ],
-  "SelectedNode": "\\Album-Api.sln",
+  "SelectedNode": "\\Album.Api\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

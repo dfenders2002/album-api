@@ -16,12 +16,12 @@ namespace Album.Api
             if (name == "" || name == null || name == " ")
             {
                 //_logger.LogInformation("Hello world");
-                return "Hello world from " + Dns.GetHostName();
+                return "Hello world from " + Dns.GetHostName() + " v2";
             }
             else
             {
                 //_logger.LogInformation($"Hello {name}");
-                return $"Hello {name} from " + Dns.GetHostName() ;
+                return $"Hello {name} from " + Dns.GetHostName()  + " v2";
             }
         }
     }

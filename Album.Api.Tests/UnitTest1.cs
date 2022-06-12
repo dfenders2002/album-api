@@ -14,7 +14,7 @@ namespace Album.Api.Tests
         {
             GreetingService greetingService = new GreetingService();
             string anwser = greetingService.Hello("Daan");
-            Assert.Equal(anwser, "Hello Daan from " + Dns.GetHostName());
+            Assert.Equal(anwser, $"Hello Daan from {Dns.GetHostName()} v2");
         }
         [Theory]
         [InlineData("", "Hello world")]
@@ -22,7 +22,7 @@ namespace Album.Api.Tests
         [InlineData(null, "Hello world")]
         public void Test2(string value1, string expected)
         {
-            expected = expected  + " from " + Dns.GetHostName();
+            expected = expected  + " from " + Dns.GetHostName() + " v2";
             GreetingService greetingService = new GreetingService();
             string awnser = greetingService.Hello(value1);
             Assert.Equal(awnser, expected);
@@ -41,7 +41,7 @@ namespace Album.Api.Tests
         [InlineData("https://localhost:44309/api/hello?name=Daan", "Hello Daan")]
         public async void GetTest(string url, string awnser)
         {
-            awnser  = awnser + " from " + Dns.GetHostName();
+            awnser  = awnser + " from " + Dns.GetHostName() + " v2";
             var client = _factory.CreateClient();
             var response = await client.GetAsync(url);
             var result = "";
