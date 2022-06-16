@@ -11,6 +11,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using Album.Api.Models;
 
 namespace Album.Api
 {
@@ -26,7 +28,8 @@ namespace Album.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddDbContext<AlbumDBContext>(options =>
+                options.UseNpgsql(Configuration.GetConnectionString("AlbumDBContext")));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
