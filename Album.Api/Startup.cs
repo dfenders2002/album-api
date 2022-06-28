@@ -13,6 +13,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Album.Api.Models;
+using Microsoft.EntityFrameworkCore.Design;
+using Album.Api.Controllers;
+using Album.Api.Services;
 
 namespace Album.Api
 {
@@ -28,13 +31,14 @@ namespace Album.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<AlbumDBContext>(options =>
-                options.UseNpgsql(Configuration.GetConnectionString("AlbumDBContext")));
             services.AddControllers();
+            services.AddScoped<IAlbumService, AlbumService>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Album.Api", Version = "v1" });
             });
+            services.AddDbContext<AlbumDBContext>(options =>
+                options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -2,7 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\Album.Api",
-    "\\Album.Api\\Models"
+    "\\Album.Api.Tests",
+    "\\Album.Api\\Controllers",
+    "\\Album.Api\\Data",
+    "\\Album.Api\\Models",
+    "\\Album.Api\\Services"
   ],
   "SelectedNode": "\\Album-Api.sln",
   "PreviewInSolutionExplorer": false

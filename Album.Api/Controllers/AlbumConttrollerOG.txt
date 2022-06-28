@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Album.Api.Models;
+using Album.Api.Services;
+
+namespace Album.Api.Controllers
+{
+   public class AlbumController
+   {
+        private readonly IAlbumService _context;
+
+        public AlbumController(IAlbumService albumService)
+        {
+            _context = albumService;    
+        }
+   }
+
+}
