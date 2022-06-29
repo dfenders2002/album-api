@@ -94,7 +94,7 @@ namespace Album.Api.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAlbum(int id)
         {
-            return await _context.DeleteAlbum(id) ? NoContent() : NotFound();
+            return await _context.DeleteAlbum(id) ? Ok("Verwijderd") : NotFound("Niet gevonden");
         }
     }
 

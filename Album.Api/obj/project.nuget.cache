@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mKlKmN7MVmL4+YiNuCpWPYIxz+XdqOt+W8BNUJEie79pvxza025rqOSPIwLYEifKGIHYYoxhAI8K8LVI/xiNTA==",
+  "dgSpecHash": "c9k8Q9aGHg5lR+P2YxzFyiF4H5KeWC0u6hAQf1VLxNtWHFzjPk1Sn9Or9IDNiFR6zqml7cjHhTRkWX5mq88qpw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dfend\\source\\repos\\album-api\\Album.Api\\Album.Api.csproj",
+  "projectFilePath": "C:\\Users\\dfend\\Source\\Repos\\album-api\\Album.Api\\Album.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dfend\\.nuget\\packages\\castle.core\\5.0.0\\castle.core.5.0.0.nupkg.sha512",
     "C:\\Users\\dfend\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

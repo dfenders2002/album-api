@@ -50,7 +50,7 @@ namespace Album.Api.Tests
             var test = new AlbumModel { ID = 2, Name = "Daan", Artist = "Daan", ImageUrl = "Daan" };
             var test2 = new AlbumModel { ID = 3, Name = "Daan", Artist = "Daan", ImageUrl = "Daan" };
             var options = new DbContextOptionsBuilder<AlbumDBContext>()
-                    .UseInMemoryDatabase(databaseName: "AlbumTestAlbums")
+                    .UseInMemoryDatabase(databaseName: "AlbumTestAlbumss")
                     .Options;
 
             var context = new AlbumDBContext(options);
@@ -170,23 +170,6 @@ namespace Album.Api.Tests
             AlbumService service = new AlbumService(context);
             Assert.True(service.AlbumModelExists(8));
         }
-        [Fact]
-        public async void AlbumAlreadyExists()
-        {
-            var test = new AlbumModel { ID = 9, Name = "Daan", Artist = "Daan", ImageUrl = "Daan" };
-
-            var options = new DbContextOptionsBuilder<AlbumDBContext>()
-                    .UseInMemoryDatabase(databaseName: "AlbumTest")
-                    .Options;
-
-            var context = new AlbumDBContext(options);
-
-            context.Database.EnsureDeleted();
-            context.Albums.Add(test);
-            context.SaveChanges();
-
-            AlbumService service = new AlbumService(context);
-            Assert.True(service.AlbumAlreadyExists(9, test));
-        }
+        
     }
 }

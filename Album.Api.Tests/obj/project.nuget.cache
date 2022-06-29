@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3OeFamzvdfRNa8Tthr8F8XMIh7KjKM9nwbePdk8ONfkGEPHTXCof7AQte6K1cykWS4pBO5eN6uNXD1HfWN2/zw==",
+  "dgSpecHash": "l1a8SR+kPcSkCH+xZ3Li3ECFEB3YAvJcbaCV5SC2HcBElnB4DtZ17dz3YGqV/v004Gl8OrZBNxxFKSO8Hpg9mQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dfend\\source\\repos\\album-api\\Album.Api.Tests\\Album.Api.Tests.csproj",
+  "projectFilePath": "C:\\Users\\dfend\\Source\\Repos\\album-api\\Album.Api.Tests\\Album.Api.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dfend\\.nuget\\packages\\autofac\\6.0.0\\autofac.6.0.0.nupkg.sha512",
     "C:\\Users\\dfend\\.nuget\\packages\\autofac.extras.moq\\6.1.0\\autofac.extras.moq.6.1.0.nupkg.sha512",

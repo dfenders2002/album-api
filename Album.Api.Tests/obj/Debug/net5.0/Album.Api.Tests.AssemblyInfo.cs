@@ -11,7 +11,7 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Album.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\dfend\\source\\repos\\album-api\\Album.Api", "Album.Api.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Album.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\dfend\\Source\\Repos\\album-api\\Album.Api", "Album.Api.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Album.Api.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
