@@ -10,7 +10,7 @@ namespace Album.Api.Controllers
     public class HelloController : Controller
     {
         //private readonly ILogger<HelloController> _logger;
-
+        //
         //public HelloController(ILogger<HelloController> logger)
         //{
         // _logger = logger;
