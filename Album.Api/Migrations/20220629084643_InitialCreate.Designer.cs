@@ -9,7 +9,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Album.Api.Migrations
 {
     [DbContext(typeof(AlbumDBContext))]
-    [Migration("20220616181203_InitialCreate")]
+    [Migration("20220629084643_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -20,10 +20,12 @@ namespace Album.Api.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 63)
                 .HasAnnotation("ProductVersion", "5.0.10");
 
-            modelBuilder.Entity("Album.Api.Models.Album", b =>
+            modelBuilder.Entity("Album.Api.Models.AlbumModel", b =>
                 {
-                    b.Property<string>("ID")
-                        .HasColumnType("text");
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .UseIdentityByDefaultColumn();
 
                     b.Property<string>("Artist")
                         .HasColumnType("text");

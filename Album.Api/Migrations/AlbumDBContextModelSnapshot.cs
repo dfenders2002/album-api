@@ -18,10 +18,12 @@ namespace Album.Api.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 63)
                 .HasAnnotation("ProductVersion", "5.0.10");
 
-            modelBuilder.Entity("Album.Api.Models.Album", b =>
+            modelBuilder.Entity("Album.Api.Models.AlbumModel", b =>
                 {
-                    b.Property<string>("ID")
-                        .HasColumnType("text");
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .UseIdentityByDefaultColumn();
 
                     b.Property<string>("Artist")
                         .HasColumnType("text");

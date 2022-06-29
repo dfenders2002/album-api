@@ -12,7 +12,7 @@ namespace Album.Api.Data
             var albums = new AlbumModel[]
             {
                 new AlbumModel{ID = 1 , Name = "Daan", Artist = "Daan" , ImageUrl = "Daan" },
-                new AlbumModel{ID = 1 , Name = "1018410", Artist = "1018410" , ImageUrl = "1018410" }
+                new AlbumModel{ID = 2 , Name = "1018410", Artist = "1018410" , ImageUrl = "1018410" }
             };
             foreach (AlbumModel a in albums)
             {
