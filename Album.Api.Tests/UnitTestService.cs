@@ -23,7 +23,7 @@ namespace Album.Api.Tests
         [Fact]
         public async void DeleteAlbum()
         {
-            var test = new AlbumModel { ID = 1, Name = "Daan", Artist = "Daan", ImageUrl = "Daan" };
+            var test = new AlbumModel { ID = "1", Name = "Daan", Artist = "Daan", ImageUrl = "Daan" };
 
             var options = new DbContextOptionsBuilder<AlbumDBContext>()
                     .UseInMemoryDatabase(databaseName: "AlbumTest")
@@ -38,17 +38,17 @@ namespace Album.Api.Tests
             AlbumService service = new AlbumService(context);
 
 
-            var res = service.GetAlbum(1);
+            var res = service.GetAlbum("1");
             Assert.Equal(test, res);
-            await service.DeleteAlbum(1);
+            await service.DeleteAlbum("1");
 
-            Assert.False(service.AlbumModelExists(1));
+            Assert.False(service.AlbumModelExists("1"));
         }
         [Fact]
         public void GetAlbums()
         {
-            var test = new AlbumModel { ID = 2, Name = "Daan", Artist = "Daan", ImageUrl = "Daan" };
-            var test2 = new AlbumModel { ID = 3, Name = "Daan", Artist = "Daan", ImageUrl = "Daan" };
+            var test = new AlbumModel { ID = "2", Name = "Daan", Artist = "Daan", ImageUrl = "Daan" };
+            var test2 = new AlbumModel { ID = "3", Name = "Daan", Artist = "Daan", ImageUrl = "Daan" };
             var options = new DbContextOptionsBuilder<AlbumDBContext>()
                     .UseInMemoryDatabase(databaseName: "AlbumTestAlbumss")
                     .Options;
@@ -69,7 +69,7 @@ namespace Album.Api.Tests
         [Fact]
         public void GetAlbum()
         {
-            var test = new AlbumModel { ID = 4, Name = "Daan", Artist = "Daan", ImageUrl = "Daan" };
+            var test = new AlbumModel { ID = "4", Name = "Daan", Artist = "Daan", ImageUrl = "Daan" };
         
             var options = new DbContextOptionsBuilder<AlbumDBContext>()
                     .UseInMemoryDatabase(databaseName: "AlbumTest")
@@ -83,14 +83,14 @@ namespace Album.Api.Tests
 
             AlbumService service = new AlbumService(context);
 
-            var res = service.GetAlbum(4);
+            var res = service.GetAlbum("4");
             Assert.Equal(test, res);
         }
 
         [Fact]
         public async void PostAlbum()
         {
-            var test = new AlbumModel { ID = 5, Name = "Daan", Artist = "Daan", ImageUrl = "Daan" };
+            var test = new AlbumModel { ID = "5", Name = "Daan", Artist = "Daan", ImageUrl = "Daan" };
 
             var options = new DbContextOptionsBuilder<AlbumDBContext>()
                     .UseInMemoryDatabase(databaseName: "AlbumTest")
@@ -105,13 +105,13 @@ namespace Album.Api.Tests
           
 
             await service.PostAlbum(test);
-            var res = service.GetAlbum(5);
+            var res = service.GetAlbum("5");
             Assert.Equal(test, res);
         }
         [Fact]
         public async void PutAlbum()
         {
-            var test = new AlbumModel { ID = 6, Name = "Daan", Artist = "Daan", ImageUrl = "Daan" };
+            var test = new AlbumModel { ID = "6", Name = "Daan", Artist = "Daan", ImageUrl = "Daan" };
 
             var options = new DbContextOptionsBuilder<AlbumDBContext>()
                     .UseInMemoryDatabase(databaseName: "AlbumTest")
@@ -125,15 +125,15 @@ namespace Album.Api.Tests
             AlbumService service = new AlbumService(context);
 
 
-            await service.PutAlbum(6, test);
-            var res = service.GetAlbum(6);
+            await service.PutAlbum("6", test);
+            var res = service.GetAlbum("6");
             Assert.Equal(test, res);
         }
 
         [Fact]
         public async void UpdateAsync()
         {
-            var test = new AlbumModel { ID = 7, Name = "Daan", Artist = "Daan", ImageUrl = "Daan" };
+            var test = new AlbumModel { ID = "7", Name = "Daan", Artist = "Daan", ImageUrl = "Daan" };
 
             var options = new DbContextOptionsBuilder<AlbumDBContext>()
                     .UseInMemoryDatabase(databaseName: "AlbumTest")
@@ -147,15 +147,15 @@ namespace Album.Api.Tests
             AlbumService service = new AlbumService(context);
 
 
-            await service.UpdateAsync(7, test);
-            var res = service.GetAlbum(7);
+            await service.UpdateAsync("7", test);
+            var res = service.GetAlbum("7");
             Assert.Equal(test, res);
         }
 
         [Fact]
         public async void AlbumModelExists()
         {
-            var test = new AlbumModel { ID = 8, Name = "Daan", Artist = "Daan", ImageUrl = "Daan" };
+            var test = new AlbumModel { ID = "8", Name = "Daan", Artist = "Daan", ImageUrl = "Daan" };
 
             var options = new DbContextOptionsBuilder<AlbumDBContext>()
                     .UseInMemoryDatabase(databaseName: "AlbumTest")
@@ -168,7 +168,7 @@ namespace Album.Api.Tests
             context.SaveChanges();
 
             AlbumService service = new AlbumService(context);
-            Assert.True(service.AlbumModelExists(8));
+            Assert.True(service.AlbumModelExists("8"));
         }
         
     }

@@ -31,9 +31,9 @@ namespace Album.Api.Controllers
 
         // GET: api/Album/5
         [HttpGet("{id}")]
-        public ActionResult<AlbumModel> GetAlbum(int id)
+        public ActionResult<AlbumModel> GetAlbum(string id)
         {
-            var album =  _context.GetAlbum(id);
+            var album = _context.GetAlbum(id);
 
             if (album == null)
             {
@@ -43,21 +43,10 @@ namespace Album.Api.Controllers
             return album;
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutDbAlbum(int id, AlbumModel albumModel)
-        {
-            if (!_context.AlbumAlreadyExists(id, albumModel))
-            {
-                return BadRequest();
-            }
-
-            return await _context.UpdateAsync(id, albumModel) ? Ok("Works") : NotFound("Niet gevonden");
-        }
-
         // PUT: api/Album/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutAlbum(int id, AlbumModel albumModel)
+        public async Task<IActionResult> PutAlbum(string id, AlbumModel albumModel)
         {
             if (!_context.AlbumAlreadyExists(id, albumModel))
             {
@@ -92,7 +81,7 @@ namespace Album.Api.Controllers
         
         // DELETE: api/Album/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteAlbum(int id)
+        public async Task<IActionResult> DeleteAlbum(string id)
         {
             return await _context.DeleteAlbum(id) ? Ok("Verwijderd") : NotFound("Niet gevonden");
         }

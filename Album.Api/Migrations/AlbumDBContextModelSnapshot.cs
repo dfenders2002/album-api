@@ -20,10 +20,8 @@ namespace Album.Api.Migrations
 
             modelBuilder.Entity("Album.Api.Models.AlbumModel", b =>
                 {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .UseIdentityByDefaultColumn();
+                    b.Property<string>("ID")
+                        .HasColumnType("text");
 
                     b.Property<string>("Artist")
                         .HasColumnType("text");

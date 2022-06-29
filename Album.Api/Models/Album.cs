@@ -9,7 +9,7 @@ namespace Album.Api.Models
 {
     public class AlbumModel
 	{
-        public int ID { get; set; }
+        public string ID { get; set; }
         public string Name { get; set; }
         public string Artist { get; set; }
         public string ImageUrl { get; set; }

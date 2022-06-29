@@ -18,14 +18,14 @@ namespace Album.Api.Services
     {
         //public List<AlbumModel> GetAlbums();
         public List<AlbumModel> GetAlbums();
-        public AlbumModel GetAlbum(int id);
+        public AlbumModel GetAlbum(string id);
         public Task<AlbumModel> PostAlbum(AlbumModel albumModel);
-        Task<bool> UpdateAsync(int id, AlbumModel albumModel);
-        public Task<bool> DeleteAlbum(int id);
-        public bool AlbumAlreadyExists(int id, AlbumModel albumCheck);
-        public Task<AlbumModel> PutAlbum (int id, AlbumModel albumModel);
+        Task<bool> UpdateAsync(string id, AlbumModel albumModel);
+        public Task<bool> DeleteAlbum(string id);
+        public bool AlbumAlreadyExists(string id, AlbumModel albumCheck);
+        public Task<AlbumModel> PutAlbum (string id, AlbumModel albumModel);
 
-        public bool AlbumModelExists(int id);
+        public bool AlbumModelExists(string id);
     }
     public class AlbumService : IAlbumService
     {
@@ -36,7 +36,7 @@ namespace Album.Api.Services
         }
         public List<AlbumModel> GetAlbums() =>
              _context.Albums.ToList();
-        public AlbumModel GetAlbum(int id) =>
+        public AlbumModel GetAlbum(string id) =>
             _context.Albums.Find(id);
         public async Task<AlbumModel> PostAlbum(AlbumModel albumModel)
         {
@@ -48,7 +48,7 @@ namespace Album.Api.Services
             }
             return null;
         }
-        public async Task<AlbumModel> PutAlbum(int id, AlbumModel albumModel)
+        public async Task<AlbumModel> PutAlbum(string id, AlbumModel albumModel)
         {
             _context.Entry(albumModel).State = EntityState.Modified;
             try
@@ -71,7 +71,7 @@ namespace Album.Api.Services
 
         }
 
-        public async Task<bool> UpdateAsync(int id, AlbumModel albumModel)
+        public async Task<bool> UpdateAsync(string id, AlbumModel albumModel)
         {
             _context.Entry(albumModel).State = EntityState.Modified;
 
@@ -92,7 +92,7 @@ namespace Album.Api.Services
             }
             return true;
         }
-        public async Task<bool> DeleteAlbum(int id)
+        public async Task<bool> DeleteAlbum(string id)
         {
             var album = GetAlbum(id);
             if (album == null)
@@ -107,12 +107,12 @@ namespace Album.Api.Services
             }
         }
         
-        public bool AlbumModelExists(int id)
+        public bool AlbumModelExists(string id)
         {
             return _context.Albums.Any(e => e.ID == id);
         }
 
-        public bool AlbumAlreadyExists(int id, AlbumModel albumCheck)
+        public bool AlbumAlreadyExists(string id, AlbumModel albumCheck)
         {
             return albumCheck.ID == id ? true : false;
         }
